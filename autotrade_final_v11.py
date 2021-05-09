@@ -686,7 +686,7 @@ while True:
         op_mode_FLOW = False
         # time.sleep(1)
         
-    print(f"시간: {now} BTC: {hold_BTC} ETH: {hold_ETH} BCH: {hold_BCH} BSV: {hold_BSV} LTC: {hold_LTC} BTG: {hold_BTG} NEO: {hold_NEO} ETC: {hold_ETC} BCHA: {hold_BCHA} REP: {hold_REP} LINK: {hold_LINK}")
+    print(f"TIME: {now} BTC: {hold_BTC} ETH: {hold_ETH} BCH: {hold_BCH} BSV: {hold_BSV} LTC: {hold_LTC} BTG: {hold_BTG} NEO: {hold_NEO} ETC: {hold_ETC} BCHA: {hold_BCHA} REP: {hold_REP} LINK: {hold_LINK}")
     print(f"DOT: {hold_DOT} QTUM: {hold_QTUM} ATOM: {hold_ATOM} WAVES: {hold_WAVES} EOS: {hold_EOS} STRK: {hold_STRK} GAS: {hold_GAS} OMG: {hold_OMG} THETA: {hold_THETA} TON: {hold_TON} LSK: {hold_TON} SRM: {hold_SRM} FLOW: {hold_FLOW}")
     # time.sleep(1)
 
