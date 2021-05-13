@@ -603,15 +603,15 @@ while True:
         print("Btime:", now, "Bprice(SRM):", price_SRM)
         P_SRM = price_SRM
         # time.sleep(1)
-    # if op_mode_FLOW is True and hold_FLOW is False and price_FLOW is not None and\
-    #     m1_1_2_FLOW - m1_2_2_FLOW < 0 and m1_1_1_FLOW - m1_2_1_FLOW > 0 and\
-    #     m1_1_1_FLOW < price_FLOW and m1_2_1_FLOW <= price_FLOW and m240_2_1_FLOW < price_FLOW:
-    #     krw_balance = upbit.get_balance("KRW") # 잔고 조회하고
-    #     upbit.buy_market_order("KRW-FLOW", 10000)
-    #     hold_FLOW = True
-    #     print("Btime:", now, "Bprice(FLOW):", price_FLOW)
-    #     P_FLOW = price_FLOW
-    #     # time.sleep(1)
+    if op_mode_FLOW is True and hold_FLOW is False and price_FLOW is not None and\
+        m1_1_2_FLOW - m1_2_2_FLOW < 0 and m1_1_1_FLOW - m1_2_1_FLOW > 0 and\
+        m1_1_1_FLOW < price_FLOW and m1_2_1_FLOW <= price_FLOW and m240_2_1_FLOW < price_FLOW:
+        krw_balance = upbit.get_balance("KRW") # 잔고 조회하고
+        upbit.buy_market_order("KRW-FLOW", 10000)
+        hold_FLOW = True
+        print("Btime:", now, "Bprice(FLOW):", price_FLOW)
+        P_FLOW = price_FLOW
+        # time.sleep(1)
 
     if hold_BTC is True:
         Buy_BTC = P_BTC
@@ -666,7 +666,7 @@ while True:
     ## 매수가보다 X% 오르면 매도
  
     if op_mode_BTC is True and hold_BTC is True and\
-        Buy_BTC * 1.0011 < price_BTC:
+        Buy_BTC * 1.0012 < price_BTC:
         BTC_balance = upbit.get_balance("KRW-BTC")
         upbit.sell_market_order("KRW-BTC", BTC_balance)
         hold_BTC = False
@@ -674,7 +674,7 @@ while True:
         op_mode_BTC = False
         # time.sleep(1)
     if op_mode_ETH is True and hold_ETH is True and\
-        Buy_ETH * 1.0011 < price_ETH:
+        Buy_ETH * 1.0012 < price_ETH:
         ETH_balance = upbit.get_balance("KRW-ETH")
         upbit.sell_market_order("KRW-ETH", ETH_balance)
         hold_ETH = False
@@ -682,7 +682,7 @@ while True:
         op_mode_ETH = False
         # time.sleep(1)
     if op_mode_BCH is True and hold_BCH is True and\
-        Buy_BCH * 1.0011 < price_BCH:
+        Buy_BCH * 1.0012 < price_BCH:
         BCH_balance = upbit.get_balance("KRW-BCH")
         upbit.sell_market_order("KRW-BCH", BCH_balance)
         hold_BCH = False
@@ -690,7 +690,7 @@ while True:
         op_mode_BCH = False
         # time.sleep(1)
     if op_mode_BSV is True and hold_BSV is True and\
-        Buy_BSV * 1.0011 < price_BSV:
+        Buy_BSV * 1.0012 < price_BSV:
         BSV_balance = upbit.get_balance("KRW-BSV")
         upbit.sell_market_order("KRW-BSV", BSV_balance)
         hold_BSV = False
@@ -698,7 +698,7 @@ while True:
         op_mode_BSV = False
         # time.sleep(1)
     if op_mode_LTC is True and hold_LTC is True and\
-        Buy_LTC * 1.0011 < price_LTC:
+        Buy_LTC * 1.0012 < price_LTC:
         LTC_balance = upbit.get_balance("KRW-LTC")
         upbit.sell_market_order("KRW-LTC", LTC_balance)
         hold_LTC = False
@@ -706,7 +706,7 @@ while True:
         op_mode_LTC = False
         # time.sleep(1)
     if op_mode_BTG is True and hold_BTG is True and\
-        Buy_BTG * 1.0011 < price_BTG:
+        Buy_BTG * 1.0012 < price_BTG:
         BTG_balance = upbit.get_balance("KRW-BTG")
         upbit.sell_market_order("KRW-BTG", BTG_balance)
         hold_BTG = False
@@ -714,7 +714,7 @@ while True:
         op_mode_BTG = False
         # time.sleep(1)
     if op_mode_NEO is True and hold_NEO is True and\
-        Buy_NEO * 1.0011 < price_NEO:
+        Buy_NEO * 1.0012 < price_NEO:
         NEO_balance = upbit.get_balance("KRW-NEO")
         upbit.sell_market_order("KRW-NEO", NEO_balance)
         hold_NEO = False
@@ -722,7 +722,7 @@ while True:
         op_mode_NEO = False
         # time.sleep(1)
     if op_mode_ETC is True and hold_ETC is True and\
-        Buy_ETC * 1.0011 < price_ETC:
+        Buy_ETC * 1.0012 < price_ETC:
         ETC_balance = upbit.get_balance("KRW-ETC")
         upbit.sell_market_order("KRW-ETC", ETC_balance)
         hold_ETC = False
@@ -730,7 +730,7 @@ while True:
         op_mode_ETC = False
         # time.sleep(1)
     if op_mode_BCHA is True and hold_BCHA is True and\
-        Buy_BCHA * 1.0011 < price_BCHA:
+        Buy_BCHA * 1.0012 < price_BCHA:
         BCHA_balance = upbit.get_balance("KRW-BCHA")
         upbit.sell_market_order("KRW-BCHA", BCHA_balance)
         hold_BCHA = False
@@ -738,7 +738,7 @@ while True:
         op_mode_BCHA = False
         # time.sleep(1)
     if op_mode_REP is True and hold_REP is True and\
-        Buy_REP * 1.0011 < price_REP:
+        Buy_REP * 1.0012 < price_REP:
         REP_balance = upbit.get_balance("KRW-REP")
         upbit.sell_market_order("KRW-REP", REP_balance)
         hold_REP = False
@@ -746,7 +746,7 @@ while True:
         op_mode_REP = False
         # time.sleep(1)
     if op_mode_LINK is True and hold_LINK is True and\
-        Buy_LINK * 1.0011 < price_LINK:
+        Buy_LINK * 1.0012 < price_LINK:
         LINK_balance = upbit.get_balance("KRW-LINK")
         upbit.sell_market_order("KRW-LINK", LINK_balance)
         hold_LINK = False
@@ -754,7 +754,7 @@ while True:
         op_mode_LINK = False
         # time.sleep(1)
     if op_mode_DOT is True and hold_DOT is True and\
-        Buy_DOT * 1.0011 < price_DOT:
+        Buy_DOT * 1.0012 < price_DOT:
         DOT_balance = upbit.get_balance("KRW-DOT")
         upbit.sell_market_order("KRW-DOT", DOT_balance)
         hold_DOT = False
@@ -762,7 +762,7 @@ while True:
         op_mode_DOT = False
         # time.sleep(1)
     if op_mode_QTUM is True and hold_QTUM is True and\
-        Buy_QTUM * 1.0011 < price_QTUM:
+        Buy_QTUM * 1.0012 < price_QTUM:
         QTUM_balance = upbit.get_balance("KRW-QTUM")
         upbit.sell_market_order("KRW-QTUM", QTUM_balance)
         hold_QTUM = False
@@ -770,7 +770,7 @@ while True:
         op_mode_QTUM = False
         # time.sleep(1)
     if op_mode_ATOM is True and hold_ATOM is True and\
-        Buy_ATOM * 1.0011 < price_ATOM:
+        Buy_ATOM * 1.0012 < price_ATOM:
         ATOM_balance = upbit.get_balance("KRW-ATOM")
         upbit.sell_market_order("KRW-ATOM", ATOM_balance)
         hold_ATOM = False
@@ -778,7 +778,7 @@ while True:
         op_mode_ATOM = False
         # time.sleep(1)
     if op_mode_WAVES is True and hold_WAVES is True and\
-        Buy_WAVES * 1.0011 < price_WAVES:
+        Buy_WAVES * 1.0012 < price_WAVES:
         WAVES_balance = upbit.get_balance("KRW-WAVES")
         upbit.sell_market_order("KRW-WAVES", WAVES_balance)
         hold_WAVES = False
@@ -786,7 +786,7 @@ while True:
         op_mode_WAVES = False
         # time.sleep(1)
     if op_mode_EOS is True and hold_EOS is True and\
-        Buy_EOS * 1.0011 < price_EOS:
+        Buy_EOS * 1.0012 < price_EOS:
         EOS_balance = upbit.get_balance("KRW-EOS")
         upbit.sell_market_order("KRW-EOS", EOS_balance)
         hold_EOS = False
@@ -794,7 +794,7 @@ while True:
         op_mode_EOS = False
         # time.sleep(1)
     if op_mode_STRK is True and hold_STRK is True and\
-        Buy_STRK * 1.0011 < price_STRK:
+        Buy_STRK * 1.0012 < price_STRK:
         STRK_balance = upbit.get_balance("KRW-STRK")
         upbit.sell_market_order("KRW-STRK", STRK_balance)
         hold_STRK = False
@@ -802,7 +802,7 @@ while True:
         op_mode_STRK = False
         # time.sleep(1)
     if op_mode_GAS is True and hold_GAS is True and\
-        Buy_GAS * 1.0011 < price_GAS:
+        Buy_GAS * 1.0012 < price_GAS:
         GAS_balance = upbit.get_balance("KRW-GAS")
         upbit.sell_market_order("KRW-GAS", GAS_balance)
         hold_GAS = False
@@ -810,7 +810,7 @@ while True:
         op_mode_GAS = False
         # time.sleep(1)
     if op_mode_OMG is True and hold_OMG is True and\
-        Buy_OMG * 1.0011 < price_OMG:
+        Buy_OMG * 1.0012 < price_OMG:
         OMG_balance = upbit.get_balance("KRW-OMG")
         upbit.sell_market_order("KRW-OMG", OMG_balance)
         hold_OMG = False
@@ -818,7 +818,7 @@ while True:
         op_mode_OMG = False
         # time.sleep(1)
     if op_mode_THETA is True and hold_THETA is True and\
-        Buy_THETA * 1.0011 < price_THETA:
+        Buy_THETA * 1.0012 < price_THETA:
         THETA_balance = upbit.get_balance("KRW-THETA")
         upbit.sell_market_order("KRW-THETA", THETA_balance)
         hold_THETA = False
@@ -826,7 +826,7 @@ while True:
         op_mode_THETA = False
         # time.sleep(1)
     if op_mode_TON is True and hold_TON is True and\
-        Buy_TON * 1.0011 < price_TON:
+        Buy_TON * 1.0012 < price_TON:
         TON_balance = upbit.get_balance("KRW-TON")
         upbit.sell_market_order("KRW-TON", TON_balance)
         hold_TON = False
@@ -834,7 +834,7 @@ while True:
         op_mode_TON = False
         # time.sleep(1)
     if op_mode_LSK is True and hold_LSK is True and\
-        Buy_LSK * 1.0011 < price_LSK:
+        Buy_LSK * 1.0012 < price_LSK:
         LSK_balance = upbit.get_balance("KRW-LSK")
         upbit.sell_market_order("KRW-LSK", LSK_balance)
         hold_LSK = False
@@ -842,7 +842,7 @@ while True:
         op_mode_LSK = False
         # time.sleep(1)
     if op_mode_SRM is True and hold_SRM is True and\
-        Buy_SRM * 1.0011 < price_SRM:
+        Buy_SRM * 1.0012 < price_SRM:
         SRM_balance = upbit.get_balance("KRW-SRM")
         upbit.sell_market_order("KRW-SRM", SRM_balance)
         hold_SRM = False
@@ -850,7 +850,7 @@ while True:
         op_mode_SRM = False
         # time.sleep(1)
     if op_mode_FLOW is True and hold_FLOW is True and\
-        Buy_FLOW * 1.0011 < price_FLOW:
+        Buy_FLOW * 1.0012 < price_FLOW:
         FLOW_balance = upbit.get_balance("KRW-FLOW")
         upbit.sell_market_order("KRW-FLOW", FLOW_balance)
         hold_FLOW = False
@@ -859,7 +859,7 @@ while True:
         # time.sleep(1)
         
     print(f"time: {now} BTC: {hold_BTC} ETH: {hold_ETH} BCH: {hold_BCH} BSV: {hold_BSV} LTC: {hold_LTC} BTG: {hold_BTG} NEO: {hold_NEO} ETC: {hold_ETC} BCHA: {hold_BCHA} REP: {hold_REP} LINK: {hold_LINK}")
-    print(f"DOT: {hold_DOT} QTUM: {hold_QTUM} ATOM: {hold_ATOM} WAVES: {hold_WAVES} EOS: {hold_EOS} STRK: {hold_STRK} GAS: {hold_GAS} OMG: {hold_OMG} THETA: {hold_THETA} TON: {hold_TON} LSK: {hold_TON} SRM: {hold_SRM} FLOW: {hold_FLOW}")
+    print(f"DOT: {hold_DOT} QTUM: {hold_QTUM} ATOM: {hold_ATOM} WAVES: {hold_WAVES} EOS: {hold_EOS} STRK: {hold_STRK} GAS: {hold_GAS} OMG: {hold_OMG} THETA: {hold_THETA} TON: {hold_TON} LSK: {hold_LSK} SRM: {hold_SRM} FLOW: {hold_FLOW}")
     # time.sleep(1)
 
 
