@@ -28,10 +28,10 @@ while True:
         m5_FLOW_1_2 = m5_FLOW_1[-2]
         m5_FLOW_1_1 = m5_FLOW_1[-1]
         op_mode_FLOW = True
-        time.sleep(1)
+
   
     price_FLOW = pyupbit.get_current_price("KRW-FLOW")
-    time.sleep(1)
+ 
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_FLOW} op: {op_mode_FLOW}")
-    time.sleep(1)
+ 
    
 
