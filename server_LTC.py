@@ -28,10 +28,10 @@ while True:
         m5_LTC_1_2 = m5_LTC_1[-2]
         m5_LTC_1_1 = m5_LTC_1[-1]
         op_mode_LTC = True
-        time.sleep(1)
+
   
     price_LTC = pyupbit.get_current_price("KRW-LTC")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_LTC} op: {op_mode_LTC}")
-    time.sleep(1)
+
    
 
