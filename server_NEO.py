@@ -18,6 +18,7 @@ while True:
         close_NEO_240 = df_NEO_240['close']
         m240_NEO = close_NEO_240.rolling(2).mean()
         m240_NEO_2_1 = m240_NEO[-1]
+        time.sleep(1)
         df_NEO_5 = pyupbit.get_ohlcv("KRW-NEO", "minute5", 5)
         close_NEO_5 = df_NEO_5['close']
         m5_NEO_2 = close_NEO_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_NEO} op: {op_mode_NEO}")
+    time.sleep(1)
    
 
