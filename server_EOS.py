@@ -18,6 +18,7 @@ while True:
         close_EOS_240 = df_EOS_240['close']
         m240_EOS = close_EOS_240.rolling(2).mean()
         m240_EOS_2_1 = m240_EOS[-1]
+        time.sleep(1)
         df_EOS_5 = pyupbit.get_ohlcv("KRW-EOS", "minute5", 5)
         close_EOS_5 = df_EOS_5['close']
         m5_EOS_2 = close_EOS_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_EOS} op: {op_mode_EOS}")
+    time.sleep(1)
    
 
