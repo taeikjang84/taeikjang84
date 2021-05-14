@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_GAS = pyupbit.get_current_price("KRW-GAS")
+    time.sleep(1)
    
 
    
