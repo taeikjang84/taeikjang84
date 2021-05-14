@@ -18,6 +18,7 @@ while True:
         close_REP_240 = df_REP_240['close']
         m240_REP = close_REP_240.rolling(2).mean()
         m240_REP_2_1 = m240_REP[-1]
+        time.sleep(1)
         df_REP_5 = pyupbit.get_ohlcv("KRW-REP", "minute5", 5)
         close_REP_5 = df_REP_5['close']
         m5_REP_2 = close_REP_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_REP} op: {op_mode_REP}")
+    time.sleep(1)
    
 
