@@ -28,10 +28,10 @@ while True:
         m5_NEO_1_2 = m5_NEO_1[-2]
         m5_NEO_1_1 = m5_NEO_1[-1]
         op_mode_NEO = True
-        time.sleep(1)
+
   
     price_NEO = pyupbit.get_current_price("KRW-NEO")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_NEO} op: {op_mode_NEO}")
-    time.sleep(1)
+
    
 
