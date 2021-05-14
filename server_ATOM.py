@@ -18,6 +18,7 @@ while True:
         close_ATOM_240 = df_ATOM_240['close']
         m240_ATOM = close_ATOM_240.rolling(2).mean()
         m240_ATOM_2_1 = m240_ATOM[-1]
+        time.sleep(1)
         df_ATOM_5 = pyupbit.get_ohlcv("KRW-ATOM", "minute5", 5)
         close_ATOM_5 = df_ATOM_5['close']
         m5_ATOM_2 = close_ATOM_5.rolling(2).mean()
@@ -27,7 +28,7 @@ while True:
         m5_ATOM_1_2 = m5_ATOM_1[-2]
         m5_ATOM_1_1 = m5_ATOM_1[-1]
         op_mode_ATOM = True
-        time.sleep(1)
+
   
     price_ATOM = pyupbit.get_current_price("KRW-ATOM")
    
