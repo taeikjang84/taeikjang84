@@ -28,10 +28,10 @@ while True:
         m5_LSK_1_2 = m5_LSK_1[-2]
         m5_LSK_1_1 = m5_LSK_1[-1]
         op_mode_LSK = True
-        time.sleep(1)
+
   
     price_LSK = pyupbit.get_current_price("KRW-LSK")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_LSK} op: {op_mode_LSK}")
-    time.sleep(1)
+
    
 
