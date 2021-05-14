@@ -18,6 +18,7 @@ while True:
         close_QTUM_240 = df_QTUM_240['close']
         m240_QTUM = close_QTUM_240.rolling(2).mean()
         m240_QTUM_2_1 = m240_QTUM[-1]
+        time.sleep(1)
         df_QTUM_5 = pyupbit.get_ohlcv("KRW-QTUM", "minute5", 5)
         close_QTUM_5 = df_QTUM_5['close']
         m5_QTUM_2 = close_QTUM_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_QTUM} op: {op_mode_QTUM}")
+    time.sleep(1)
    
 
