@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_TON = pyupbit.get_current_price("KRW-TON")
+    time.sleep(1)
    
 
    
