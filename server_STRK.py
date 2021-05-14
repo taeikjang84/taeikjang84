@@ -28,10 +28,10 @@ while True:
         m5_STRK_1_2 = m5_STRK_1[-2]
         m5_STRK_1_1 = m5_STRK_1[-1]
         op_mode_STRK = True
-        time.sleep(1)
+
   
     price_STRK = pyupbit.get_current_price("KRW-STRK")
-    time.sleep(1)
+
    
 
    
@@ -63,5 +63,5 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_STRK} op: {op_mode_STRK}")
-    time.sleep(1)
+
 
