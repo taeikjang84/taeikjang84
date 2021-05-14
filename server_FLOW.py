@@ -18,6 +18,7 @@ while True:
         close_FLOW_240 = df_FLOW_240['close']
         m240_FLOW = close_FLOW_240.rolling(2).mean()
         m240_FLOW_2_1 = m240_FLOW[-1]
+        time.sleep(1)
         df_FLOW_5 = pyupbit.get_ohlcv("KRW-FLOW", "minute5", 5)
         close_FLOW_5 = df_FLOW_5['close']
         m5_FLOW_2 = close_FLOW_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_FLOW} op: {op_mode_FLOW}")
+    time.sleep(1)
    
 
