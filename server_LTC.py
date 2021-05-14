@@ -18,6 +18,7 @@ while True:
         close_LTC_240 = df_LTC_240['close']
         m240_LTC = close_LTC_240.rolling(2).mean()
         m240_LTC_2_1 = m240_LTC[-1]
+        time.sleep(1)
         df_LTC_5 = pyupbit.get_ohlcv("KRW-LTC", "minute5", 5)
         close_LTC_5 = df_LTC_5['close']
         m5_LTC_2 = close_LTC_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_LTC} op: {op_mode_LTC}")
+    time.sleep(1)
    
 
