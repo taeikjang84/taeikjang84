@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_BSV = pyupbit.get_current_price("KRW-BSV")
+    time.sleep(1)
    
 
    
