@@ -28,10 +28,10 @@ while True:
         m5_TON_1_2 = m5_TON_1[-2]
         m5_TON_1_1 = m5_TON_1[-1]
         op_mode_TON = True
-        time.sleep(1)
+
   
     price_TON = pyupbit.get_current_price("KRW-TON")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_TON} op: {op_mode_TON}")
-    time.sleep(1)
+
    
 
