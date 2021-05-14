@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_BCHA = pyupbit.get_current_price("KRW-BCHA")
+    time.sleep(1)
    
 
    
