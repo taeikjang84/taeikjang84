@@ -18,6 +18,7 @@ while True:
         close_BCH_240 = df_BCH_240['close']
         m240_BCH = close_BCH_240.rolling(2).mean()
         m240_BCH_2_1 = m240_BCH[-1]
+        time.sleep(1)
         df_BCH_5 = pyupbit.get_ohlcv("KRW-BCH", "minute5", 5)
         close_BCH_5 = df_BCH_5['close']
         m5_BCH_2 = close_BCH_5.rolling(2).mean()
@@ -61,5 +62,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_BCH} op: {op_mode_BCH}")
+    time.sleep(1)
    
 
