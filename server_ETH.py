@@ -18,6 +18,7 @@ while True:
         close_ETH_240 = df_ETH_240['close']
         m240_ETH = close_ETH_240.rolling(2).mean()
         m240_ETH_2_1 = m240_ETH[-1]
+        time.sleep(1)
         df_ETH_5 = pyupbit.get_ohlcv("KRW-ETH", "minute5", 5)
         close_ETH_5 = df_ETH_5['close']
         m5_ETH_2 = close_ETH_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_ETH} op: {op_mode_ETH}")
+    time.sleep(1)
    
 
