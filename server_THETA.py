@@ -18,6 +18,7 @@ while True:
         close_THETA_240 = df_THETA_240['close']
         m240_THETA = close_THETA_240.rolling(2).mean()
         m240_THETA_2_1 = m240_THETA[-1]
+        time.sleep(1)
         df_THETA_5 = pyupbit.get_ohlcv("KRW-THETA", "minute5", 5)
         close_THETA_5 = df_THETA_5['close']
         m5_THETA_2 = close_THETA_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_THETA} op: {op_mode_THETA}")
+    time.sleep(1)
    
 
