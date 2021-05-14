@@ -18,6 +18,7 @@ while True:
         close_BTC_240 = df_BTC_240['close']
         m240_BTC = close_BTC_240.rolling(2).mean()
         m240_BTC_2_1 = m240_BTC[-1]
+        time.sleep(1)
         df_BTC_5 = pyupbit.get_ohlcv("KRW-BTC", "minute5", 5)
         close_BTC_5 = df_BTC_5['close']
         m5_BTC_2 = close_BTC_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_BTC} op: {op_mode_BTC}")
+    time.sleep(1)
    
 
