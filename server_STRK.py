@@ -18,6 +18,7 @@ while True:
         close_STRK_240 = df_STRK_240['close']
         m240_STRK = close_STRK_240.rolling(2).mean()
         m240_STRK_2_1 = m240_STRK[-1]
+        time.sleep(1)
         df_STRK_5 = pyupbit.get_ohlcv("KRW-STRK", "minute5", 5)
         close_STRK_5 = df_STRK_5['close']
         m5_STRK_2 = close_STRK_5.rolling(2).mean()
@@ -62,5 +63,5 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_STRK} op: {op_mode_STRK}")
-   
+    time.sleep(1)
 
