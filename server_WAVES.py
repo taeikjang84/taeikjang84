@@ -28,11 +28,10 @@ while True:
         m5_WAVES_1_2 = m5_WAVES_1[-2]
         m5_WAVES_1_1 = m5_WAVES_1[-1]
         op_mode_WAVES = True
-        time.sleep(1)
+
   
     price_WAVES = pyupbit.get_current_price("KRW-WAVES")
-    time.sleep(1)
-   
+
 
    
     ## 매초마다 조건을 확인한 후 매수 시도 (현재가격 확인 후)
@@ -63,6 +62,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_WAVES} op: {op_mode_WAVES}")
-    time.sleep(1)
+
    
 
