@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_REP = pyupbit.get_current_price("KRW-REP")
+    time.sleep(1)
    
 
    
