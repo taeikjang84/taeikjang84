@@ -18,6 +18,7 @@ while True:
         close_LSK_240 = df_LSK_240['close']
         m240_LSK = close_LSK_240.rolling(2).mean()
         m240_LSK_2_1 = m240_LSK[-1]
+        time.sleep(1)
         df_LSK_5 = pyupbit.get_ohlcv("KRW-LSK", "minute5", 5)
         close_LSK_5 = df_LSK_5['close']
         m5_LSK_2 = close_LSK_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_LSK} op: {op_mode_LSK}")
+    time.sleep(1)
    
 
