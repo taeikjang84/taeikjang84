@@ -28,10 +28,10 @@ while True:
         m5_THETA_1_2 = m5_THETA_1[-2]
         m5_THETA_1_1 = m5_THETA_1[-1]
         op_mode_THETA = True
-        time.sleep(1)
+
   
     price_THETA = pyupbit.get_current_price("KRW-THETA")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_THETA} op: {op_mode_THETA}")
-    time.sleep(1)
+
    
 
