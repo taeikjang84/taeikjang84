@@ -28,10 +28,10 @@ while True:
         m5_ETC_1_2 = m5_ETC_1[-2]
         m5_ETC_1_1 = m5_ETC_1[-1]
         op_mode_ETC = True
-        time.sleep(1)
+
   
     price_ETC = pyupbit.get_current_price("KRW-ETC")
-    time.sleep(1)
+ 
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_ETC} op: {op_mode_ETC}")
-    time.sleep(1)
+
    
 
