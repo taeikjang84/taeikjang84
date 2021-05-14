@@ -28,10 +28,10 @@ while True:
         m5_EOS_1_2 = m5_EOS_1[-2]
         m5_EOS_1_1 = m5_EOS_1[-1]
         op_mode_EOS = True
-        time.sleep(1)
+
   
     price_EOS = pyupbit.get_current_price("KRW-EOS")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_EOS} op: {op_mode_EOS}")
-    time.sleep(1)
+
    
 
