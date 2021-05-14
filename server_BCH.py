@@ -28,10 +28,10 @@ while True:
         m5_BCH_1_2 = m5_BCH_1[-2]
         m5_BCH_1_1 = m5_BCH_1[-1]
         op_mode_BCH = True
-        time.sleep(1)
+
   
     price_BCH = pyupbit.get_current_price("KRW-BCH")
-    time.sleep(1)
+
 
    
     ## 매초마다 조건을 확인한 후 매수 시도 (현재가격 확인 후)
@@ -62,6 +62,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_BCH} op: {op_mode_BCH}")
-    time.sleep(1)
+
    
 
