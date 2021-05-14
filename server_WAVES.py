@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_WAVES = pyupbit.get_current_price("KRW-WAVES")
+    time.sleep(1)
    
 
    
