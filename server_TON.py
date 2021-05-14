@@ -18,6 +18,7 @@ while True:
         close_TON_240 = df_TON_240['close']
         m240_TON = close_TON_240.rolling(2).mean()
         m240_TON_2_1 = m240_TON[-1]
+        time.sleep(1)
         df_TON_5 = pyupbit.get_ohlcv("KRW-TON", "minute5", 5)
         close_TON_5 = df_TON_5['close']
         m5_TON_2 = close_TON_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_TON} op: {op_mode_TON}")
+    time.sleep(1)
    
 
