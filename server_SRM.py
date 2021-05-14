@@ -18,6 +18,7 @@ while True:
         close_SRM_240 = df_SRM_240['close']
         m240_SRM = close_SRM_240.rolling(2).mean()
         m240_SRM_2_1 = m240_SRM[-1]
+        time.sleep(1)
         df_SRM_5 = pyupbit.get_ohlcv("KRW-SRM", "minute5", 5)
         close_SRM_5 = df_SRM_5['close']
         m5_SRM_2 = close_SRM_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_SRM} op: {op_mode_SRM}")
+    time.sleep(1)
    
 
