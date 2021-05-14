@@ -20,6 +20,7 @@ while True:
         m240_ETC_2_1 = m240_ETC[-1]
         df_ETC_5 = pyupbit.get_ohlcv("KRW-ETC", "minute5", 5)
         close_ETC_5 = df_ETC_5['close']
+        time.sleep(1)
         m5_ETC_2 = close_ETC_5.rolling(2).mean()
         m5_ETC_1 = close_ETC_5.rolling(1).mean()
         m5_ETC_2_2 = m5_ETC_2[-2]
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_ETC} op: {op_mode_ETC}")
+    time.sleep(1)
    
 
