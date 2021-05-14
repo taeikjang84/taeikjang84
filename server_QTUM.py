@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_QTUM = pyupbit.get_current_price("KRW-QTUM")
+    time.sleep(1)
    
 
    
