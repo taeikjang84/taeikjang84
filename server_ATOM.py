@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_ATOM = pyupbit.get_current_price("KRW-ATOM")
+    time.sleep(1)
    
 
    
