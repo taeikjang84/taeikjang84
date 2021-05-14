@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_SRM = pyupbit.get_current_price("KRW-SRM")
+    time.sleep(1)
    
 
    
