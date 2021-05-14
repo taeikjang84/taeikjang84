@@ -18,6 +18,7 @@ while True:
         close_BSV_240 = df_BSV_240['close']
         m240_BSV = close_BSV_240.rolling(2).mean()
         m240_BSV_2_1 = m240_BSV[-1]
+        time.sleep(1)
         df_BSV_5 = pyupbit.get_ohlcv("KRW-BSV", "minute5", 5)
         close_BSV_5 = df_BSV_5['close']
         m5_BSV_2 = close_BSV_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_BSV} op: {op_mode_BSV}")
+    time.sleep(1)
    
 
