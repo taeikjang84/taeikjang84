@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_FLOW = pyupbit.get_current_price("KRW-FLOW")
+    time.sleep(1)
    
 
    
