@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_ETH = pyupbit.get_current_price("KRW-ETH")
+    time.sleep(1)
    
 
    
