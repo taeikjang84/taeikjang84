@@ -28,10 +28,10 @@ while True:
         m5_GAS_1_2 = m5_GAS_1[-2]
         m5_GAS_1_1 = m5_GAS_1[-1]
         op_mode_GAS = True
-        time.sleep(1)
+
   
     price_GAS = pyupbit.get_current_price("KRW-GAS")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_GAS} op: {op_mode_GAS}")
-    time.sleep(1)
+
    
 
