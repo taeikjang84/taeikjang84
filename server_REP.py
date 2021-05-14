@@ -28,10 +28,10 @@ while True:
         m5_REP_1_2 = m5_REP_1[-2]
         m5_REP_1_1 = m5_REP_1[-1]
         op_mode_REP = True
-        time.sleep(1)
+
   
     price_REP = pyupbit.get_current_price("KRW-REP")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_REP} op: {op_mode_REP}")
-    time.sleep(1)
+
    
 
