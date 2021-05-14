@@ -18,6 +18,7 @@ while True:
         close_OMG_240 = df_OMG_240['close']
         m240_OMG = close_OMG_240.rolling(2).mean()
         m240_OMG_2_1 = m240_OMG[-1]
+        time.sleep(1)
         df_OMG_5 = pyupbit.get_ohlcv("KRW-OMG", "minute5", 5)
         close_OMG_5 = df_OMG_5['close']
         m5_OMG_2 = close_OMG_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_OMG} op: {op_mode_OMG}")
+    time.sleep(1)
    
 
