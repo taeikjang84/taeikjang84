@@ -18,6 +18,7 @@ while True:
         close_GAS_240 = df_GAS_240['close']
         m240_GAS = close_GAS_240.rolling(2).mean()
         m240_GAS_2_1 = m240_GAS[-1]
+        time.sleep(1)
         df_GAS_5 = pyupbit.get_ohlcv("KRW-GAS", "minute5", 5)
         close_GAS_5 = df_GAS_5['close']
         m5_GAS_2 = close_GAS_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_GAS} op: {op_mode_GAS}")
+    time.sleep(1)
    
 
