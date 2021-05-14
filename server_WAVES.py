@@ -18,6 +18,7 @@ while True:
         close_WAVES_240 = df_WAVES_240['close']
         m240_WAVES = close_WAVES_240.rolling(2).mean()
         m240_WAVES_2_1 = m240_WAVES[-1]
+        time.sleep(1)
         df_WAVES_5 = pyupbit.get_ohlcv("KRW-WAVES", "minute5", 5)
         close_WAVES_5 = df_WAVES_5['close']
         m5_WAVES_2 = close_WAVES_5.rolling(2).mean()
@@ -62,5 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_WAVES} op: {op_mode_WAVES}")
+    time.sleep(1)
    
 
