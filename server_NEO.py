@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_NEO = pyupbit.get_current_price("KRW-NEO")
+    time.sleep(1)
    
 
    
