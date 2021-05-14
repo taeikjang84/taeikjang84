@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_THETA = pyupbit.get_current_price("KRW-THETA")
+    time.sleep(1)
    
 
    
