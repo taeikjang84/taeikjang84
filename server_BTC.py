@@ -28,11 +28,10 @@ while True:
         m5_BTC_1_2 = m5_BTC_1[-2]
         m5_BTC_1_1 = m5_BTC_1[-1]
         op_mode_BTC = True
-        time.sleep(1)
+
   
     price_BTC = pyupbit.get_current_price("KRW-BTC")
-    time.sleep(1)
-   
+
 
    
     ## 매초마다 조건을 확인한 후 매수 시도 (현재가격 확인 후)
@@ -63,6 +62,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_BTC} op: {op_mode_BTC}")
-    time.sleep(1)
+
    
 
