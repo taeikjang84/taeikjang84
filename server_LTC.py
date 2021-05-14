@@ -30,6 +30,7 @@ while True:
         time.sleep(1)
   
     price_LTC = pyupbit.get_current_price("KRW-LTC")
+    time.sleep(1)
    
 
    
