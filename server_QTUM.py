@@ -28,10 +28,10 @@ while True:
         m5_QTUM_1_2 = m5_QTUM_1[-2]
         m5_QTUM_1_1 = m5_QTUM_1[-1]
         op_mode_QTUM = True
-        time.sleep(1)
+  
   
     price_QTUM = pyupbit.get_current_price("KRW-QTUM")
-    time.sleep(1)
+
    
 
    
@@ -63,6 +63,6 @@ while True:
         # time.sleep(1)
      
     print(f"time: {now} hold: {hold_QTUM} op: {op_mode_QTUM}")
-    time.sleep(1)
+
    
 
